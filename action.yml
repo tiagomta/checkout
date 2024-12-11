@@ -125,11 +125,11 @@ runs:
         sparse-checkout-cone-mode: ${{ inputs.sparse-checkout-cone-mode }}
         fetch-depth: ${{ inputs.fetch-depth }}
         fetch-tags: ${{ inputs.fetch-tags }}
-        show-progress:  
-        lfs:
-        submodules:
-        set-safe-directory:
-        github-server-url:
+        show-progress: ${{ inputs.show-progress }}
+        lfs: ${{ inputs.lfs }}
+        submodules: ${{ inputs.submodules }}
+        set-safe-directory: ${{ inputs.set-safe-directory }}
+        github-server-url: ${{ inputs.github-server-url }}
     - 
       name: Update submodules
       if: ${{ inputs.submodules != false }}
